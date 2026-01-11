@@ -23,15 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # ⬇⬇⬇ TU JE TO DÔLEŽITÉ MIESTO ⬇⬇⬇
       - name: Build EXE (PyInstaller)
-        run: |
-          pyinstaller ^
-            --noconfirm ^
-            --clean ^
-            --windowed ^
-            --name IMPORTPOKLADNA ^
-            --icon logo.ico ^
-            app_gui.py
+        run: pyinstaller --noconfirm --clean --windowed --onefile --name IMPORTPOKLADNA --icon logo.ico app_gui.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
