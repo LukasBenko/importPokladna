@@ -1,4 +1,11 @@
 from __future__ import annotations
+from tkinter import font as tkfont
+
+PRIMARY_PURPLE = "#3d1f59"
+PRIMARY_ORANGE = "#f6915b"
+BG_LIGHT = "#fef8f4"
+GRAY_50 = "#808080"
+WHITE = "#ffffff"
 
 import traceback
 import tkinter as tk
